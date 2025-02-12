@@ -10,7 +10,7 @@
 ### 🔹 **파트너**
 - [운영 어드민 기준 거래처 관리](https://pma.shortz.net/administrator-control/client) 에 등록된 모든 이메일
 - **한국애니메이션제작자협회**  
-  - 이미혜 사무국장: [webmaster@koreaanimation.or.kr](mailto:webmaster@koreaanimation.or.kr)
+  - [webmaster@koreaanimation.or.kr](mailto:webmaster@koreaanimation.or.kr)(이미혜 사무국장)
 - **한국드라마제작사협회**  
   - [koda@kodatv.or.kr](mailto:koda@kodatv.or.kr)
 
