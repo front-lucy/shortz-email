@@ -95,7 +95,7 @@
                       target="_blank"
                       style="
                         display: inline-block;
-                        padding: 12px 24px;
+                        padding: 12px 24px 10px 24px;
                         background-color: #FF4300;
                         border-radius: 8px;
                         color: #ffffff;
@@ -113,7 +113,7 @@
                     target="_blank"
                     style="
                       display: inline-block;
-                      padding: 12px 24px;
+                      padding: 12px 24px 10px 24px;
                       background-color: #FF008A;
                       border-radius: 8px;
                       color: #ffffff;

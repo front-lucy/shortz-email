@@ -1,10 +1,9 @@
-<!-- common_email_registration_completed_pc.html -->
 <!DOCTYPE html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>회원가입 완료</title>
+    <title>레이스 참가 신청 결과</title>
   </head>
   <body style="margin: 0">
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -37,7 +36,7 @@
                   <tr>
                     <td style="padding-bottom: 16px">
                       <img
-                        src="${logoUrl}"
+                        src="https://s3.ap-northeast-2.amazonaws.com/shortz.net/public/toogo/webtoonrun-email.png"
                         alt="웹툰런"
                         width="131"
                         style="display: block"
@@ -55,49 +54,8 @@
                           line-height: 34px;
                         "
                       >
-                        회원가입을 환영합니다.
+                        레이스 참가 신청 결과<br />안내드립니다.
                       </div>
-                    </td>
-                  </tr>
-
-                  <!-- 소개 텍스트 -->
-                  <tr>
-                    <td style="padding-bottom: 16px">
-                      <div
-                        style="
-                          color: #292929;
-                          font-size: 14px;
-                          font-family: Noto Sans KR, sans-serif;
-                          line-height: 20px;
-                        "
-                      >
-                        작가의 '더 많은 자유, 더 높은 가치'<br />
-                        독자의 '더 큰 기대, 더 센 만족'
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="padding-bottom: 24px">
-                      <span
-                        style="
-                          color: #292929;
-                          font-size: 18px;
-                          font-family: Noto Sans KR, sans-serif;
-                          font-weight: 500;
-                          line-height: 24px;
-                        "
-                        >새로운 웹툰 생태계,
-                      </span>
-                      <span
-                        style="
-                          color: #ff4300;
-                          font-size: 18px;
-                          font-family: Noto Sans KR, sans-serif;
-                          font-weight: 700;
-                          line-height: 24px;
-                        "
-                        >웹툰런</span
-                      >
                     </td>
                   </tr>
 
@@ -124,7 +82,7 @@
                               line-height: 20px;
                             "
                           >
-                            아이디
+                            참가 레이스
                           </td>
                           <td
                             style="
@@ -136,7 +94,37 @@
                               line-height: 20px;
                             "
                           >
-                            ${email}
+                            ${raceTitle}
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            width="120"
+                            style="
+                              background: #f6f6f6;
+                              padding: 14px 16px;
+                              border-top: 1px solid #e9e9e9;
+                              color: #292929;
+                              font-size: 13px;
+                              font-family: Noto Sans KR, sans-serif;
+                              font-weight: 500;
+                              line-height: 20px;
+                            "
+                          >
+                            참가 작품
+                          </td>
+                          <td
+                            style="
+                              padding: 14px 16px;
+                              border-top: 1px solid #e9e9e9;
+                              border-left: 1px solid #e9e9e9;
+                              color: #292929;
+                              font-size: 13px;
+                              font-family: Noto Sans KR, sans-serif;
+                              line-height: 20px;
+                            "
+                          >
+                            ${contentTitle}
                           </td>
                         </tr>
                         <tr>
@@ -154,7 +142,7 @@
                               line-height: 20px;
                             "
                           >
-                            마케팅 수신 동의 여부
+                            참가 신청 결과
                           </td>
                           <td
                             style="
@@ -168,7 +156,7 @@
                               line-height: 20px;
                             "
                           >
-                            ${agreementMarketing}
+                            참가 확정
                           </td>
                         </tr>
                       </table>
@@ -179,11 +167,11 @@
                   <tr>
                     <td>
                       <a
-                        href="${webtoonrunUrl}"
+                        href="${raceUrl}"
                         target="_blank"
                         style="
                           display: inline-block;
-                          padding: 12px 24px;
+                          padding: 12px 24px 10px 24px;
                           background-color: #ff4300;
                           border-radius: 8px;
                           color: #ffffff;
@@ -192,7 +180,7 @@
                           text-decoration: none;
                           line-height: 20px;
                         "
-                        >웹툰런 보러가기</a
+                        >참가 결과 보러가기</a
                       >
                     </td>
                   </tr>

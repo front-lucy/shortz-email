@@ -1,9 +1,10 @@
+<!-- common_email_registration_completed_pc.html -->
 <!DOCTYPE html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>레이스 참가 신청 결과</title>
+    <title>회원가입 완료</title>
   </head>
   <body style="margin: 0">
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -54,8 +55,49 @@
                           line-height: 34px;
                         "
                       >
-                        레이스 참가 신청 결과<br />안내드립니다.
+                        회원가입을 환영합니다.
                       </div>
+                    </td>
+                  </tr>
+
+                  <!-- 소개 텍스트 -->
+                  <tr>
+                    <td style="padding-bottom: 16px">
+                      <div
+                        style="
+                          color: #292929;
+                          font-size: 14px;
+                          font-family: Noto Sans KR, sans-serif;
+                          line-height: 20px;
+                        "
+                      >
+                        작가의 '더 많은 자유, 더 높은 가치'<br />
+                        독자의 '더 큰 기대, 더 센 만족'
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="padding-bottom: 24px">
+                      <span
+                        style="
+                          color: #292929;
+                          font-size: 18px;
+                          font-family: Noto Sans KR, sans-serif;
+                          font-weight: 500;
+                          line-height: 24px;
+                        "
+                        >새로운 웹툰 생태계,
+                      </span>
+                      <span
+                        style="
+                          color: #ff4300;
+                          font-size: 18px;
+                          font-family: Noto Sans KR, sans-serif;
+                          font-weight: 700;
+                          line-height: 24px;
+                        "
+                        >웹툰런</span
+                      >
                     </td>
                   </tr>
 
@@ -82,7 +124,7 @@
                               line-height: 20px;
                             "
                           >
-                            참가 레이스
+                            아이디
                           </td>
                           <td
                             style="
@@ -94,37 +136,7 @@
                               line-height: 20px;
                             "
                           >
-                            2025 웹툰런 인 서울
-                          </td>
-                        </tr>
-                        <tr>
-                          <td
-                            width="120"
-                            style="
-                              background: #f6f6f6;
-                              padding: 14px 16px;
-                              border-top: 1px solid #e9e9e9;
-                              color: #292929;
-                              font-size: 13px;
-                              font-family: Noto Sans KR, sans-serif;
-                              font-weight: 500;
-                              line-height: 20px;
-                            "
-                          >
-                            참가 작품
-                          </td>
-                          <td
-                            style="
-                              padding: 14px 16px;
-                              border-top: 1px solid #e9e9e9;
-                              border-left: 1px solid #e9e9e9;
-                              color: #292929;
-                              font-size: 13px;
-                              font-family: Noto Sans KR, sans-serif;
-                              line-height: 20px;
-                            "
-                          >
-                            작품명 노출
+                            ${email}
                           </td>
                         </tr>
                         <tr>
@@ -142,7 +154,7 @@
                               line-height: 20px;
                             "
                           >
-                            반려 사유
+                            마케팅 수신 동의 여부
                           </td>
                           <td
                             style="
@@ -156,7 +168,7 @@
                               line-height: 20px;
                             "
                           >
-                            참가 확정
+                            ${agreementMarketing}
                           </td>
                         </tr>
                       </table>
@@ -167,11 +179,11 @@
                   <tr>
                     <td>
                       <a
-                        href="https://dev.webtoonrun.com/redirect/writer-contest"
+                        href="${webtoonrunUrl}"
                         target="_blank"
                         style="
                           display: inline-block;
-                          padding: 12px 24px;
+                          padding: 12px 24px 10px 24px;
                           background-color: #ff4300;
                           border-radius: 8px;
                           color: #ffffff;
@@ -180,7 +192,7 @@
                           text-decoration: none;
                           line-height: 20px;
                         "
-                        >참가 결과 보러가기</a
+                        >웹툰런 보러가기</a
                       >
                     </td>
                   </tr>
@@ -191,100 +203,35 @@
             <!-- 푸터 영역 -->
             <tr>
               <td style="padding: 24px 20px; background-color: #f2f2f2">
-                <div style="word-break: keep-all">
-                  <span
-                    style="
-                      color: #a9a9a9;
-                      font-size: 12px;
-                      font-family: Noto Sans KR, sans-serif;
-                      font-weight: 700;
-                      line-height: 18px;
-                      margin-right: 4px;
-                    "
-                    >대표자</span
+                <div
+                  style="
+                    word-break: keep-all;
+                    font-size: 12px;
+                    color: #a9a9a9;
+                    font-family: Noto Sans KR, sans-serif;
+                    line-height: 18px;
+                  "
+                >
+                  <strong>대표자</strong> 황남용
+                  <strong style="margin-left: 12px">사업자 등록번호</strong>
+                  832-85-02168<strong style="margin-left: 12px"
+                    >통신판매업신고</strong
                   >
-                  <span
-                    style="
-                      color: #a9a9a9;
-                      font-size: 12px;
-                      font-family: Noto Sans KR, sans-serif;
-                      line-height: 18px;
-                      margin-right: 12px;
-                    "
-                    >황남용</span
-                  >
-                  <span
-                    style="
-                      color: #a9a9a9;
-                      font-size: 12px;
-                      font-family: Noto Sans KR, sans-serif;
-                      font-weight: 700;
-                      line-height: 18px;
-                      margin-right: 4px;
-                    "
-                    >사업자 등록번호</span
-                  >
-                  <span
-                    style="
-                      color: #a9a9a9;
-                      font-size: 12px;
-                      font-family: Noto Sans KR, sans-serif;
-                      line-height: 18px;
-                      margin-right: 12px;
-                    "
-                  >
-                    <span>832-85-02168</span>
-                  </span>
-                  <span
-                    style="
-                      color: #a9a9a9;
-                      font-size: 12px;
-                      font-family: Noto Sans KR, sans-serif;
-                      font-weight: 700;
-                      line-height: 18px;
-                      margin-right: 4px;
-                    "
-                    >통신판매업신고</span
-                  >
-                  <span
-                    style="
-                      color: #a9a9a9;
-                      font-size: 12px;
-                      font-family: Noto Sans KR, sans-serif;
-                      line-height: 18px;
-                    "
-                    >제 2024-부천원미-0603호</span
-                  >
+                  제 2024-부천원미-0603호
                 </div>
-
-                <div style="margin: 0px 0 12px 0; word-break: keep-all">
-                  <span
-                    style="
-                      color: #a9a9a9;
-                      font-size: 12px;
-                      font-family: Noto Sans KR, sans-serif;
-                      font-weight: 700;
-                      line-height: 18px;
-                      margin-right: 4px;
-                    "
-                    >주소</span
-                  >
-                  <span
-                    style="
-                      color: #a9a9a9;
-                      font-size: 12px;
-                      font-family: Noto Sans KR, sans-serif;
-                      line-height: 18px;
-                    "
-                  >
-                    <span>경기도 </span>
-                    <span>부천시 </span>
-                    <span>길주로 </span>
-                    <span>1, 8층 801~2호</span>
-                    <span>(웹툰융합센터)</span>
-                  </span>
+                <div
+                  style="
+                    margin-bottom: 12px;
+                    word-break: keep-all;
+                    font-size: 12px;
+                    color: #a9a9a9;
+                    font-family: Noto Sans KR, sans-serif;
+                    line-height: 18px;
+                  "
+                >
+                  <strong>주소</strong> 경기도 부천시 길주로 1, 8층 801~2호
+                  (웹툰융합센터)
                 </div>
-
                 <div
                   style="
                     color: #808080;
@@ -297,7 +244,7 @@
                   본 메일은 발신전용으로 회신이 불가합니다.<br />
                   문의사항은
                   <a
-                    href="https://webtoonrun.com/customer-center?tab=faq"
+                    href="${csLink}"
                     target="_blank"
                     style="
                       color: #808080;
