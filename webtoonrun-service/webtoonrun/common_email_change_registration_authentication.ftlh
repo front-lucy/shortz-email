@@ -53,8 +53,8 @@
                   <img
                           src="${logoUrl}"
                           alt="${serviceName} 로고"
-                       height="18"
-                          style="display: block"
+                     
+                          style="display: block; height: 18px;"
                   />
                 </td>
               </tr>

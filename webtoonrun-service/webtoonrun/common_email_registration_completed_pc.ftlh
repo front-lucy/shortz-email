@@ -39,8 +39,8 @@
                       <img
                         src="https://s3.ap-northeast-2.amazonaws.com/shortz.net/public/admin-link/logo_webtoonrun_text_hori_orange.svg"
                         alt="웹툰런"
-                        height="18"
-                        style="display: block"
+                      
+                        style="display: block; height: 18px;"
                       />
                     </td>
                   </tr>

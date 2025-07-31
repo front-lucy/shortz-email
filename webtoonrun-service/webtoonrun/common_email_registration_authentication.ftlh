@@ -48,8 +48,8 @@
                       <img
                         src="https://s3.ap-northeast-2.amazonaws.com/shortz.net/public/toogo/webtoonrun-email.png"
                         alt="웹툰런"
-                     height="18"
-                        style="display: block"
+                   
+                        style="display: block; height: 18px;"
                       />
                     </td>
                   </tr>

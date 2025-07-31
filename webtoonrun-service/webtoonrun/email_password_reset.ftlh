@@ -63,8 +63,8 @@
                       <img
                       src="${logoUrl}"
                         alt="웹툰런"
-                     height="18"
-                        style="display: block"
+                   
+                        style="display: block; height: 18px;"
                       />
                     </td>
                   </tr>
