@@ -14,7 +14,7 @@
             border="0"
             cellspacing="0"
             cellpadding="0"
-            style="max-width: 590px"
+            style="max-width: 630px"
           >
             <!-- 상단 그라데이션 바 -->
             <tr>
@@ -45,9 +45,10 @@
                   <!-- 로고 및 제목 -->
                   <tr>
                     <td style="padding-bottom: 16px">
-                      src="${logoUrl}"
+                      <img
+                        src="https://s3.ap-northeast-2.amazonaws.com/shortz.net/public/toogo/webtoonrun-email.png"
                         alt="웹툰런"
-                        width="131"
+                     height="18"
                         style="display: block"
                       />
                     </td>
@@ -95,7 +96,7 @@
                       target="_blank"
                       style="
                         display: inline-block;
-                        padding: 12px 24px 10px 24px;
+                        padding: 12px 24px;
                         background-color: #FF4300;
                         border-radius: 8px;
                         color: #ffffff;
@@ -113,7 +114,7 @@
                     target="_blank"
                     style="
                       display: inline-block;
-                      padding: 12px 24px 10px 24px;
+                      padding: 12px 24px;
                       background-color: #FF008A;
                       border-radius: 8px;
                       color: #ffffff;

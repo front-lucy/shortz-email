@@ -1,4 +1,3 @@
-<!-- email_sanction_webtoonrun 제재타입 작품, 이슈-->
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -10,7 +9,7 @@
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
     <tr>
         <td align="center" style="background-color: #f6f6f6; padding: 20px">
-            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width: 590px">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width: 630px">
 
                 <!-- 상단 그라데이션 바 -->
                 <tr>
@@ -26,9 +25,9 @@
                             <tr>
                                 <td style="padding-bottom: 16px">
                                     <img
-                                    src="${logoUrl}"
+                                            src="https://s3.ap-northeast-2.amazonaws.com/shortz.net/public/toogo/webtoonrun-email.png"
                                             alt="웹툰런"
-                                            width="131"
+                                         height="18"
                                             style="display: block"
                                     />
                                 </td>
@@ -65,7 +64,7 @@
                                                     제재 대상
                                                 </td>
                                                 <td style="padding: 14px 16px; border-left: 1px solid #e9e9e9; font-size: 13px; font-family: Noto Sans KR, sans-serif; color: #292929;">
-                                                    <span style="color: #4b4b4b; font-size: 13px">${contentTitle}</span>
+                                                    <span style="color: #292929; font-size: 13px">${contentTitle}</span>
                                                 </td>
                                             </tr>
 
@@ -126,7 +125,7 @@
                                     <a
                                             href="${href}"
                                             target="_blank"
-                                            style="display: inline-block; padding: 12px 24px 10px 24px; background-color: #ff4300; border-radius: 8px; color: #ffffff; font-size: 14px; font-family: Noto Sans KR, sans-serif; text-decoration: none; line-height: 20px;">
+                                            style="display: inline-block; padding: 12px 24px; background-color: #ff4300; border-radius: 8px; color: #ffffff; font-size: 14px; font-family: Noto Sans KR, sans-serif; text-decoration: none; line-height: 20px;">
                                         작품 관리
                                     </a>
                                 </td>
@@ -136,7 +135,7 @@
                     </td>
                 </tr>
 
-                <!-- 푸터 --> 
+                   <!-- 푸터 영역 -->
             <tr>
                 <td style="padding: 24px 20px; background-color: #f2f2f2">
                   <div

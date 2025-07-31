@@ -1,15 +1,9 @@
-<!-- common_email_change_registration_authentication 메일폼>외부>이메일 변경 시 이메일 인증 (완료) -->
-
 <!DOCTYPE html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="format-detection"
-      content="telephone=no, address=no, email=no"
-    />
-    <title>이메일 인증 안내</title>
+    <title>1:1 문의 답변</title>
   </head>
   <body style="margin: 0">
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -20,8 +14,9 @@
             border="0"
             cellspacing="0"
             cellpadding="0"
-            style="max-width: 590px"
-          > 
+            style="max-width: 630px"
+          >
+            <!-- 상단 그라데이션 바 -->
             <tr>
               <#if serviceName == "webtoonrun">
                 <td
@@ -41,7 +36,7 @@
             </tr>
             
 
-            <!-- 본문 -->
+            <!-- 메인 컨텐츠 영역 -->
             <tr>
               <td
                 style="padding: 64px 20px 80px 20px; background-color: #ffffff"
@@ -51,9 +46,9 @@
                   <tr>
                     <td style="padding-bottom: 16px">
                       <img
-                        src="${logoUrl}"
-                        alt="${serviceName} 로고"
-                        width="131"
+					  src="${logoUrl}"
+ alt="웹툰런"
+                     height="18"
                         style="display: block"
                       />
                     </td>
@@ -69,14 +64,14 @@
                           line-height: 34px;
                         "
                       >
-                        이메일 인증 안내
+                        1:1 문의 답변
                       </div>
                     </td>
                   </tr>
 
-                  <!-- 안내 문구 -->
+                  <!-- 소개 텍스트 -->
                   <tr>
-                    <td style="padding-bottom: 40px">
+                    <td style="padding-bottom: 24px">
                       <div
                         style="
                           color: #292929;
@@ -86,60 +81,90 @@
                         "
                       >
                         안녕하세요.<br />
-                        이메일 변경을 위해 이메일 인증 절차를 완료해주세요.
+                        문의하신 내용에 대한 답변 안내드립니다.
                       </div>
                     </td>
                   </tr>
 
-                  <!-- 인증 버튼 -->
+                  <!-- 문의/답변 테이블 -->
                   <tr>
                     <td>
-
-                      <#if serviceName == "webtoonrun">
-                      <a
-                      href="${href}"
-                      target="_blank"
-                      style="
-                        display: inline-block;
-                        padding: 12px 24px 10px 24px;
-                        background-color: #FF4300;
-                        border-radius: 8px;
-                        color: #ffffff;
-                        font-size: 14px;
-                        font-family: Noto Sans KR, sans-serif;
-                        text-decoration: none;
-                        line-height: 20px;
-                      "
-                    >
-                      이메일 인증하기
-                    </a>
-                    <#elseif serviceName == "shortz">
-                    <a
-                    href="${href}"
-                    target="_blank"
-                    style="
-                      display: inline-block;
-                      padding: 12px 24px 10px 24px;
-                      background-color: #FF008A;
-                      border-radius: 8px;
-                      color: #ffffff;
-                      font-size: 14px;
-                      font-family: Noto Sans KR, sans-serif;
-                      text-decoration: none;
-                      line-height: 20px;
-                    "
-                  >
-                    이메일 인증하기
-                  </a>
-                    </#if>
+                      <table
+                        width="100%"
+                        border="0"
+                        cellspacing="0"
+                        cellpadding="0"
+                        style="border-top: 1px solid #4b4b4b"
+                      >
+                        <tr>
+                          <td
+                            width="120"
+                            style="
+                              background: #f6f6f6;
+                              padding: 14px 16px;
+                              color: #292929;
+                              font-size: 13px;
+                              font-family: Noto Sans KR, sans-serif;
+                              font-weight: 500;
+                              line-height: 20px;
+                            "
+                          >
+                            문의 내용
+                          </td>
+                          <td
+                            style="
+                              padding: 14px 16px;
+                              border-left: 1px solid #e9e9e9;
+                              color: #292929;
+                              font-size: 13px;
+                              font-family: Noto Sans KR, sans-serif;
+                              line-height: 20px;
+                            "
+                          >
+                            ${inquiryContent}
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            width="120"
+                            style="
+                              background: #f6f6f6;
+                              padding: 14px 16px;
+                              border-top: 1px solid #e9e9e9;
+                              border-bottom: 1px solid #4b4b4b;
+                              color: #292929;
+                              font-size: 13px;
+                              font-family: Noto Sans KR, sans-serif;
+                              font-weight: 500;
+                              line-height: 20px;
+                            "
+                          >
+                            답변 내용
+                          </td>
+                          <td
+                            style="
+                              padding: 14px 16px;
+                              border-top: 1px solid #e9e9e9;
+                              border-bottom: 1px solid #4b4b4b;
+                              border-left: 1px solid #e9e9e9;
+                              color: #292929;
+                              font-size: 13px;
+                              font-family: Noto Sans KR, sans-serif;
+                              line-height: 20px;
+                            "
+                          >
+                            ${inquiryAnswer}
+                          </td>
+                        </tr>
+                      </table>
                     </td>
                   </tr>
                 </table>
               </td>
             </tr>
 
-      <!-- 푸터 영역 -->
-      <tr>
+       <!-- 푸터 영역 -->
+       <tr>
         <td style="padding: 24px 20px; background-color: #f2f2f2">
           <div
             style="

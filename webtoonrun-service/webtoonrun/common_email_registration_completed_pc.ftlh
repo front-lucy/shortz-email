@@ -15,7 +15,7 @@
             border="0"
             cellspacing="0"
             cellpadding="0"
-            style="max-width: 590px"
+            style="max-width: 630px"
           >
             <!-- 상단 그라데이션 바 -->
             <tr>
@@ -37,9 +37,9 @@
                   <tr>
                     <td style="padding-bottom: 16px">
                       <img
-                        src="${logoUrl}"
+                        src="https://s3.ap-northeast-2.amazonaws.com/shortz.net/public/admin-link/logo_webtoonrun_text_hori_orange.svg"
                         alt="웹툰런"
-                        width="131"
+                        height="18"
                         style="display: block"
                       />
                     </td>
@@ -183,7 +183,7 @@
                         target="_blank"
                         style="
                           display: inline-block;
-                          padding: 12px 24px 10px 24px;
+                          padding: 12px 24px;
                           background-color: #ff4300;
                           border-radius: 8px;
                           color: #ffffff;

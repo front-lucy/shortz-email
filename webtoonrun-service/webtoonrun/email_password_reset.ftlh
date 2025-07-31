@@ -14,7 +14,7 @@
             border="0"
             cellspacing="0"
             cellpadding="0"
-            style="max-width: 590px"
+            style="max-width: 630px"
           >
             <!-- 상단 그라데이션 바 -->
             <!-- 상단 그라데이션 바 -->
@@ -33,20 +33,18 @@
                     background: linear-gradient(90deg, var(--Primary-500, #ff006f) 0%, #ff32d6 100%);
                   "
                 ></td>
-              </#if>
               <#elseif serviceName == "jaedam">
               <td
                 style="
                   height: 4px;
-                  background: #22D4DD;
+                   background: linear-gradient(90deg, #22D4DD 0%, #89E8F6 100%);
                 "
               ></td>
-            </#if>
             <#elseif serviceName == "provider">
             <td
               style="
                 height: 4px;
-                background: linear-gradient(90deg, #ff4201 0%, #ffa932 100%);
+                background: linear-gradient(90deg, #FF008A 0%, #FF6A9C 100%);
               "
             ></td>
           </#if>
@@ -65,7 +63,7 @@
                       <img
                       src="${logoUrl}"
                         alt="웹툰런"
-                        width="131"
+                     height="18"
                         style="display: block"
                       />
                     </td>
@@ -112,7 +110,7 @@
                         target="_blank"
                         style="
                           display: inline-block;
-                          padding: 12px 24px 10px 24px;
+                          padding: 12px 24px;
                           background-color: #ff4300;
                           border-radius: 8px;
                           color: #ffffff;
@@ -125,11 +123,11 @@
                       >
                       <#elseif serviceName == "shortz">
                       <a
-                      href="${href}"
+                      href="${authUrl}"
                       target="_blank"
                       style="
                         display: inline-block;
-                        padding: 12px 24px 10px 24px;
+                        padding: 12px 24px;
                         background-color: #FF008A;
                         border-radius: 8px;
                         color: #ffffff;
@@ -143,11 +141,11 @@
                     </a>
                     <#elseif serviceName == "jaedam">
                     <a
-                    href="${href}"
+                    href="${authUrl}"
                     target="_blank"
                     style="
                       display: inline-block;
-                      padding: 12px 24px 10px 24px;
+                      padding: 12px 24px;
                       background-color: #22D4DD;
                       border-radius: 8px;
                       color: #ffffff;
@@ -161,11 +159,11 @@
                   </a>
                   <#elseif serviceName == "provider">
                   <a
-                  href="${href}"
+                  href="${authUrl}"
                   target="_blank"
                   style="
                     display: inline-block;
-                    padding: 12px 24px 10px 24px;
+                    padding: 12px 24px;
                     background-color: #FF008A;
                     border-radius: 8px;
                     color: #ffffff;
