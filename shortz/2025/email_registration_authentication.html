@@ -1,10 +1,9 @@
-<!-- common_email_registration_completed_pc.html -->
 <!DOCTYPE html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>회원가입 완료</title>
+    <title>이메일 인증 안내</title>
   </head>
   <body style="margin: 0">
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -22,7 +21,7 @@
               <td
                 style="
                   height: 4px;
-                  background: linear-gradient(90deg, #ff4201 0%, #ffa932 100%);
+                  background: linear-gradient(90deg, #ff006f 0%, #ff32d6 100%);
                 "
               ></td>
             </tr>
@@ -37,8 +36,8 @@
                   <tr>
                     <td style="padding-bottom: 16px">
                       <img
-                        src="https://s3.ap-northeast-2.amazonaws.com/shortz.net/public/admin-link/logo_webtoonrun_text_hori_orange.svg"
-                        alt="웹툰런"
+                        src="https://s3.ap-northeast-2.amazonaws.com/shortz.net/public/admin-link/logo_shortz_hori_black.svg"
+                        alt="쇼츠"
                         style="display: block; height: 18px"
                       />
                     </td>
@@ -54,14 +53,14 @@
                           line-height: 34px;
                         "
                       >
-                        회원가입을 환영합니다.
+                        이메일 인증 안내
                       </div>
                     </td>
                   </tr>
 
                   <!-- 소개 텍스트 -->
                   <tr>
-                    <td style="padding-bottom: 16px">
+                    <td style="padding-bottom: 40px">
                       <div
                         style="
                           color: #292929;
@@ -70,107 +69,9 @@
                           line-height: 20px;
                         "
                       >
-                        작가의 '더 많은 자유, 더 높은 가치'<br />
-                        독자의 '더 큰 기대, 더 센 만족'
+                        안녕하세요.<br />
+                        이메일 변경을 위해 이메일 인증 절차를 완료해주세요.
                       </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="padding-bottom: 24px">
-                      <span
-                        style="
-                          color: #292929;
-                          font-size: 18px;
-                          font-family: Noto Sans KR, sans-serif;
-                          font-weight: 500;
-                          line-height: 24px;
-                        "
-                        >새로운 웹툰 생태계,
-                      </span>
-                      <span
-                        style="
-                          color: #ff4300;
-                          font-size: 18px;
-                          font-family: Noto Sans KR, sans-serif;
-                          font-weight: 700;
-                          line-height: 24px;
-                        "
-                        >웹툰런</span
-                      >
-                    </td>
-                  </tr>
-
-                  <!-- 정보 테이블 -->
-                  <tr>
-                    <td style="padding-bottom: 40px">
-                      <table
-                        width="100%"
-                        border="0"
-                        cellspacing="0"
-                        cellpadding="0"
-                        style="border-top: 1px solid #4b4b4b"
-                      >
-                        <tr>
-                          <td
-                            width="120"
-                            style="
-                              background: #f6f6f6;
-                              padding: 14px 16px;
-                              color: #292929;
-                              font-size: 13px;
-                              font-family: Noto Sans KR, sans-serif;
-                              font-weight: 500;
-                              line-height: 20px;
-                            "
-                          >
-                            아이디
-                          </td>
-                          <td
-                            style="
-                              padding: 14px 16px;
-                              border-left: 1px solid #e9e9e9;
-                              color: #292929;
-                              font-size: 13px;
-                              font-family: Noto Sans KR, sans-serif;
-                              line-height: 20px;
-                            "
-                          >
-                            ${email}
-                          </td>
-                        </tr>
-                        <tr>
-                          <td
-                            width="120"
-                            style="
-                              background: #f6f6f6;
-                              padding: 14px 16px;
-                              border-top: 1px solid #e9e9e9;
-                              border-bottom: 1px solid #4b4b4b;
-                              color: #292929;
-                              font-size: 13px;
-                              font-family: Noto Sans KR, sans-serif;
-                              font-weight: 500;
-                              line-height: 20px;
-                            "
-                          >
-                            마케팅 수신 동의 여부
-                          </td>
-                          <td
-                            style="
-                              padding: 14px 16px;
-                              border-top: 1px solid #e9e9e9;
-                              border-bottom: 1px solid #4b4b4b;
-                              border-left: 1px solid #e9e9e9;
-                              color: #292929;
-                              font-size: 13px;
-                              font-family: Noto Sans KR, sans-serif;
-                              line-height: 20px;
-                            "
-                          >
-                            ${agreementMarketing}
-                          </td>
-                        </tr>
-                      </table>
                     </td>
                   </tr>
 
@@ -178,12 +79,12 @@
                   <tr>
                     <td>
                       <a
-                        href="${webtoonrunUrl}"
+                        href="${href}"
                         target="_blank"
                         style="
                           display: inline-block;
                           padding: 12px 24px;
-                          background-color: #ff4300;
+                          background-color: #ff008a;
                           border-radius: 8px;
                           color: #ffffff;
                           font-size: 14px;
@@ -191,8 +92,9 @@
                           text-decoration: none;
                           line-height: 20px;
                         "
-                        >웹툰런 보러가기</a
                       >
+                        이메일 인증하기
+                      </a>
                     </td>
                   </tr>
                 </table>
