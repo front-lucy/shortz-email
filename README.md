@@ -38,11 +38,11 @@
 
 ---
 
-₩₩₩bash
-for file in _; do
-case "$file" in
-_.html) mv "$file" "${file%.html}.ftlh" ;;
-\*.ftlh) mv "$file" "${file%.ftlh}.html" ;;
-esac
+```text
+for file in *; do
+  case "$file" in
+    *.html) mv "$file" "${file%.html}.ftlh" ;;
+    *.ftlh) mv "$file" "${file%.ftlh}.html" ;;
+  esac
 done
-₩₩₩
+```
